@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  MentalHealth
-//
-//  Created by Trevor Miller on 4/4/24.
-//
-
 import SwiftUI
 import SwiftData
 

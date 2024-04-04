@@ -14,7 +14,6 @@
 		9F07CB2F2BBF3A4600143C14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F07CB2E2BBF3A4600143C14 /* Preview Assets.xcassets */; };
 		9F07CB392BBF3A4600143C14 /* MentalHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07CB382BBF3A4600143C14 /* MentalHealthTests.swift */; };
 		9F07CB432BBF3A4600143C14 /* MentalHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */; };
-		9F07CB452BBF3A4600143C14 /* MentalHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07CB442BBF3A4600143C14 /* MentalHealthUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +45,6 @@
 		9F07CB382BBF3A4600143C14 /* MentalHealthTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthTests.swift; sourceTree = "<group>"; };
 		9F07CB3E2BBF3A4600143C14 /* MentalHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MentalHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthUITests.swift; sourceTree = "<group>"; };
-		9F07CB442BBF3A4600143C14 /* MentalHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9F07CB512BBF3CC100143C14 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,7 +127,6 @@
 			isa = PBXGroup;
 			children = (
 				9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */,
-				9F07CB442BBF3A4600143C14 /* MentalHealthUITestsLaunchTests.swift */,
 			);
 			path = MentalHealthUITests;
 			sourceTree = "<group>";
@@ -283,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F07CB432BBF3A4600143C14 /* MentalHealthUITests.swift in Sources */,
-				9F07CB452BBF3A4600143C14 /* MentalHealthUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
