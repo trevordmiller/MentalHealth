@@ -47,6 +47,7 @@
 		9F07CB3E2BBF3A4600143C14 /* MentalHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MentalHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthUITests.swift; sourceTree = "<group>"; };
 		9F07CB442BBF3A4600143C14 /* MentalHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F07CB512BBF3CC100143C14 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		9F07CB182BBF3A4500143C14 = {
 			isa = PBXGroup;
 			children = (
+				9F07CB512BBF3CC100143C14 /* README.md */,
 				9F07CB232BBF3A4500143C14 /* MentalHealth */,
 				9F07CB372BBF3A4600143C14 /* MentalHealthTests */,
 				9F07CB412BBF3A4600143C14 /* MentalHealthUITests */,
