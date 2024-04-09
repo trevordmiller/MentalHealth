@@ -142,8 +142,8 @@
 			isa = PBXGroup;
 			children = (
 				9F7439DD2BC5B810002E639D /* QuestionnairesView.swift */,
-				9F7439E12BC5C0F3002E639D /* QuestionnairesEmptyView.swift */,
 				9F7439DF2BC5BB55002E639D /* QuestionnairesListView.swift */,
+				9F7439E12BC5C0F3002E639D /* QuestionnairesEmptyView.swift */,
 			);
 			path = Questionnaires;
 			sourceTree = "<group>";
