@@ -2,9 +2,16 @@ import SwiftUI
 import SwiftData
 
 struct QuestionnairesView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var questionnaires: [Questionnaire]
+    
     var body: some View {
         NavigationSplitView {
-            QuestionnairesListView()
+            if questionnaires.isEmpty {
+                QuestionnairesEmptyView()
+            } else {
+                QuestionnairesListView()
+            }
         } detail: {
             Text("Select A Questionnaire")
         }
