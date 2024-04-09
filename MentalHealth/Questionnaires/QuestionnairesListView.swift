@@ -48,6 +48,6 @@ struct QuestionnairesListView: View {
 }
 
 #Preview {
-    ContentView()
+    QuestionnairesListView()
         .modelContainer(for: Questionnaire.self, inMemory: true)
 }

@@ -19,6 +19,6 @@ struct QuestionnairesView: View {
 }
 
 #Preview {
-    ContentView()
+    QuestionnairesView()
         .modelContainer(for: Questionnaire.self, inMemory: true)
 }
