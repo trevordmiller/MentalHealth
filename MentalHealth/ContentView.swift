@@ -3,7 +3,12 @@ import SwiftData
 
 struct ContentView: View {
     var body: some View {
-        QuestionnairesView()
+        TabView {
+            QuestionnairesView()
+                .tabItem {
+                    Label("Questionnaires", systemImage: "list.bullet.clipboard")
+                }
+        }
     }
 }
 
