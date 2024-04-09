@@ -13,7 +13,7 @@ struct QuestionnairesView: View {
                 QuestionnairesListView()
             }
         } detail: {
-            Text("Select A Questionnaire")
+            Text("Select a questionnaire")
         }
     }
 }
