@@ -9,7 +9,7 @@ struct QuestionnairesEmptyView: View {
         ContentUnavailableView {
             Label("Questionnaires", systemImage: "list.bullet.clipboard")
         } description: {
-            Text("Add a questionnaire")
+            Text("Answer some questions to get started")
             
             Button(action: addQuestionnaire) {
                 Label("Add a questionnaire", systemImage: "plus")
