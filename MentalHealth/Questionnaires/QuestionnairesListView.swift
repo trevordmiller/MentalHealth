@@ -5,6 +5,8 @@ struct QuestionnairesListView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var questionnaires: [Questionnaire]
     
+    @State private var isAdding = false
+    
     var body: some View {
         Group {
             if questionnaires.isEmpty {
@@ -37,19 +39,20 @@ struct QuestionnairesListView: View {
             }
         }
         .navigationTitle("Questionnaires")
+        .sheet(isPresented: $isAdding) {
+            QuestionnairesAddView()
+        }
     }
     
     private func addQuestionnaire() {
-        withAnimation {
-            let newQuestionnaire = Questionnaire(timestamp: Date())
-            modelContext.insert(newQuestionnaire)
-        }
+        isAdding = true
     }
     
     private func deleteQuestionnaires(offsets: IndexSet) {
         withAnimation {
             for index in offsets {
-                modelContext.delete(questionnaires[index])
+                let questionnaire = questionnaires[index]
+                modelContext.delete(questionnaire)
             }
         }
     }
