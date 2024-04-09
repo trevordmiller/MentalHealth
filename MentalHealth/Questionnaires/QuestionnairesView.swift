@@ -32,6 +32,7 @@ struct QuestionnairesView: View {
                     }
                 }
             }
+            .navigationTitle("Questionnaires")
         } detail: {
             Text("Select A Questionnaire")
         }
