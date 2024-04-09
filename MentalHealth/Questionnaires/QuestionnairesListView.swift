@@ -11,7 +11,7 @@ struct QuestionnairesListView: View {
                 NavigationLink {
                     Text("Questionnaire at \(questionnaire.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
                 } label: {
-                    Text(questionnaire.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+                    Text(questionnaire.timestamp, format: Date.FormatStyle(date: .long, time: .shortened))
                 }
             }
             .onDelete(perform: deleteQuestionnaires)
