@@ -16,6 +16,7 @@ struct QuestionnairesEmptyView: View {
             }
             .buttonStyle(.borderedProminent)
             .controlSize(.extraLarge)
+            .disabled(!questionnaires.isEmpty)
         }
     }
 
