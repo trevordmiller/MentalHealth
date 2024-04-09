@@ -48,6 +48,8 @@ struct QuestionnairesListView: View {
 }
 
 #Preview {
-    QuestionnairesListView()
-        .modelContainer(for: Questionnaire.self, inMemory: true)
+    NavigationStack {
+        QuestionnairesListView()
+            .modelContainer(for: Questionnaire.self, inMemory: true)
+    }
 }
