@@ -15,6 +15,7 @@
 		9F07CB392BBF3A4600143C14 /* MentalHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07CB382BBF3A4600143C14 /* MentalHealthTests.swift */; };
 		9F07CB432BBF3A4600143C14 /* MentalHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */; };
 		9F7439DE2BC5B810002E639D /* QuestionnairesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7439DD2BC5B810002E639D /* QuestionnairesView.swift */; };
+		9F7439E02BC5BB55002E639D /* QuestionnairesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7439DF2BC5BB55002E639D /* QuestionnairesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthUITests.swift; sourceTree = "<group>"; };
 		9F07CB512BBF3CC100143C14 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9F7439DD2BC5B810002E639D /* QuestionnairesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnairesView.swift; sourceTree = "<group>"; };
+		9F7439DF2BC5BB55002E639D /* QuestionnairesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnairesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				9F7439DD2BC5B810002E639D /* QuestionnairesView.swift */,
+				9F7439DF2BC5BB55002E639D /* QuestionnairesListView.swift */,
 			);
 			path = Questionnaires;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F7439DE2BC5B810002E639D /* QuestionnairesView.swift in Sources */,
+				9F7439E02BC5BB55002E639D /* QuestionnairesListView.swift in Sources */,
 				9F07CB272BBF3A4500143C14 /* ContentView.swift in Sources */,
 				9F07CB292BBF3A4500143C14 /* Questionnaire.swift in Sources */,
 				9F07CB252BBF3A4500143C14 /* MentalHealthApp.swift in Sources */,
