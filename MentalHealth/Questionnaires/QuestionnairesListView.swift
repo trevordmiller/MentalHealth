@@ -6,6 +6,8 @@ struct QuestionnairesListView: View {
     @Query private var questionnaires: [Questionnaire]
     
     @State private var isAdding = false
+    @State private var isConfirmingDelete = false
+    @State private var pendingDelete: [Questionnaire] = []
     
     var body: some View {
         Group {
@@ -20,7 +22,7 @@ struct QuestionnairesListView: View {
                             Text(questionnaire.timestamp, format: Date.FormatStyle(date: .long, time: .shortened))
                         }
                     }
-                    .onDelete(perform: deleteQuestionnaires)
+                    .onDelete(perform: confirmDelete)
                 }
             }
         }
@@ -33,7 +35,7 @@ struct QuestionnairesListView: View {
             }
 #endif
             ToolbarItem {
-                Button(action: addQuestionnaire) {
+                Button(action: add) {
                     Label("Add a questionnaire", systemImage: "plus")
                 }
             }
@@ -42,16 +44,34 @@ struct QuestionnairesListView: View {
         .sheet(isPresented: $isAdding) {
             QuestionnairesAddView()
         }
+        .confirmationDialog("Delete", isPresented: $isConfirmingDelete) {
+            Button(role: .destructive, action: delete) {
+                Label("Delete", systemImage: "trash")
+            }
+            
+            Button(role: .cancel, action: cancelDelete) {
+                Label("Cancel", systemImage: "xmark")
+            }
+        }
     }
     
-    private func addQuestionnaire() {
+    private func add() {
         isAdding = true
     }
     
-    private func deleteQuestionnaires(offsets: IndexSet) {
+    private func confirmDelete(offsets: IndexSet) {
+        pendingDelete = offsets.map { questionnaires[$0] }
+        isConfirmingDelete = true
+    }
+    
+    private func cancelDelete() {
+        isConfirmingDelete = false
+        pendingDelete = []
+    }
+    
+    private func delete() {
         withAnimation {
-            for index in offsets {
-                let questionnaire = questionnaires[index]
+            for questionnaire in pendingDelete {
                 modelContext.delete(questionnaire)
             }
         }
