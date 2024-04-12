@@ -14,9 +14,11 @@ struct QuestionnairesAddView: View {
             
             Spacer()
             
-            Button("Save", action: save)
-                .buttonStyle(.borderedProminent)
-                .controlSize(.extraLarge)
+            Button(action: save) {
+                Label("Save", systemImage: "plus.square.on.square")
+            }
+            .buttonStyle(.borderedProminent)
+            .controlSize(.extraLarge)
         }
         .padding()
     }
