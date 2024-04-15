@@ -27,13 +27,6 @@ struct QuestionnairesListView: View {
             }
         }
         .toolbar {
-#if os(iOS)
-            if !questionnaires.isEmpty {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-            }
-#endif
             ToolbarItem(placement: .primaryAction) {
                 Button(action: add) {
                     Label("Add a questionnaire", systemImage: "plus")
