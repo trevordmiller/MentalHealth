@@ -16,6 +16,8 @@
 		9F07CB432BBF3A4600143C14 /* MentalHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */; };
 		9F372CAB2BCDC25E009308C6 /* QuestionnaireRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372CAA2BCDC25E009308C6 /* QuestionnaireRowView.swift */; };
 		9F372CB12BCDCD20009308C6 /* QuestionnaireDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372CB02BCDCD20009308C6 /* QuestionnaireDetailsView.swift */; };
+		9F372CB72BCDE0A5009308C6 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372CB62BCDE0A5009308C6 /* Score.swift */; };
+		9F372CB92BCDE48D009308C6 /* Severity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372CB82BCDE48D009308C6 /* Severity.swift */; };
 		9F393C3C2BCC75D3002F0FEB /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393C3B2BCC75D3002F0FEB /* Questions.swift */; };
 		9F393C3E2BCC7A30002F0FEB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393C3D2BCC7A30002F0FEB /* Answer.swift */; };
 		9F393C402BCC8689002F0FEB /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393C3F2BCC8689002F0FEB /* QuestionView.swift */; };
@@ -57,6 +59,8 @@
 		9F07CB512BBF3CC100143C14 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9F372CAA2BCDC25E009308C6 /* QuestionnaireRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireRowView.swift; sourceTree = "<group>"; };
 		9F372CB02BCDCD20009308C6 /* QuestionnaireDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireDetailsView.swift; sourceTree = "<group>"; };
+		9F372CB62BCDE0A5009308C6 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		9F372CB82BCDE48D009308C6 /* Severity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Severity.swift; sourceTree = "<group>"; };
 		9F393C3B2BCC75D3002F0FEB /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		9F393C3D2BCC7A30002F0FEB /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		9F393C3F2BCC8689002F0FEB /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
@@ -170,6 +174,8 @@
 				9F07CB282BBF3A4500143C14 /* Questionnaire.swift */,
 				9F393C3B2BCC75D3002F0FEB /* Questions.swift */,
 				9F393C3D2BCC7A30002F0FEB /* Answer.swift */,
+				9F372CB82BCDE48D009308C6 /* Severity.swift */,
+				9F372CB62BCDE0A5009308C6 /* Score.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -312,6 +318,8 @@
 				9F7439E02BC5BB55002E639D /* QuestionnairesListView.swift in Sources */,
 				9F393C3E2BCC7A30002F0FEB /* Answer.swift in Sources */,
 				9F7439E22BC5C0F3002E639D /* QuestionnairesEmptyView.swift in Sources */,
+				9F372CB92BCDE48D009308C6 /* Severity.swift in Sources */,
+				9F372CB72BCDE0A5009308C6 /* Score.swift in Sources */,
 				9F07CB272BBF3A4500143C14 /* ContentView.swift in Sources */,
 				9F393C3C2BCC75D3002F0FEB /* Questions.swift in Sources */,
 				9F07CB292BBF3A4500143C14 /* Questionnaire.swift in Sources */,
