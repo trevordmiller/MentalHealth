@@ -53,8 +53,8 @@ struct QuestionnairesListView: View {
     }
     
     private func cancelDelete() {
-        isConfirmingDelete = false
         pendingDelete = []
+        isConfirmingDelete = false
     }
     
     private func delete() {
