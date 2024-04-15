@@ -45,13 +45,8 @@ struct QuestionnairesListView: View {
             QuestionnaireAddView()
         }
         .confirmationDialog("Delete", isPresented: $isConfirmingDelete) {
-            Button(role: .destructive, action: delete) {
-                Label("Delete", systemImage: "trash")
-            }
-            
-            Button(role: .cancel, action: cancelDelete) {
-                Label("Cancel", systemImage: "xmark")
-            }
+            Button("Delete", role: .destructive, action: delete)
+            Button("Cancel", role: .cancel, action: cancelDelete)
         }
     }
     
