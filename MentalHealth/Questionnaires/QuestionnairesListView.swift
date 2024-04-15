@@ -34,7 +34,7 @@ struct QuestionnairesListView: View {
                 }
             }
 #endif
-            ToolbarItem {
+            ToolbarItem(placement: .primaryAction) {
                 Button(action: add) {
                     Label("Add a questionnaire", systemImage: "plus")
                 }
