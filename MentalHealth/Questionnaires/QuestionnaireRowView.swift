@@ -6,7 +6,7 @@ struct QuestionnaireRowView: View {
     
     var body: some View {
         NavigationLink {
-            Text("Questionnaire at \(questionnaire.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))")
+            QuestionnaireDetailsView(questionnaire: questionnaire)
         } label: {
             Text(questionnaire.creationDate, format: Date.FormatStyle(date: .long, time: .shortened))
         }
