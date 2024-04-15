@@ -3,9 +3,13 @@ import SwiftData
 
 @Model
 final class Questionnaire {
-    var timestamp: Date
+    let id: UUID
+    let creationDate: Date
+    let questions: Questions
     
-    init(timestamp: Date) {
-        self.timestamp = timestamp
+    init(questions: Questions) {
+        id = UUID()
+        creationDate = Date()
+        self.questions = questions
     }
 }

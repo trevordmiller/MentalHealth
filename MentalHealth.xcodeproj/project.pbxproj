@@ -14,10 +14,13 @@
 		9F07CB2F2BBF3A4600143C14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F07CB2E2BBF3A4600143C14 /* Preview Assets.xcassets */; };
 		9F07CB392BBF3A4600143C14 /* MentalHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07CB382BBF3A4600143C14 /* MentalHealthTests.swift */; };
 		9F07CB432BBF3A4600143C14 /* MentalHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */; };
+		9F393C3C2BCC75D3002F0FEB /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393C3B2BCC75D3002F0FEB /* Questions.swift */; };
+		9F393C3E2BCC7A30002F0FEB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393C3D2BCC7A30002F0FEB /* Answer.swift */; };
+		9F393C402BCC8689002F0FEB /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393C3F2BCC8689002F0FEB /* QuestionView.swift */; };
 		9F7439DE2BC5B810002E639D /* QuestionnairesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7439DD2BC5B810002E639D /* QuestionnairesView.swift */; };
 		9F7439E02BC5BB55002E639D /* QuestionnairesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7439DF2BC5BB55002E639D /* QuestionnairesListView.swift */; };
 		9F7439E22BC5C0F3002E639D /* QuestionnairesEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7439E12BC5C0F3002E639D /* QuestionnairesEmptyView.swift */; };
-		9F7B45C02BC5F29100E1CC2D /* QuestionnairesAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B45BF2BC5F29100E1CC2D /* QuestionnairesAddView.swift */; };
+		9F7B45C02BC5F29100E1CC2D /* QuestionnaireAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B45BF2BC5F29100E1CC2D /* QuestionnaireAddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +53,13 @@
 		9F07CB3E2BBF3A4600143C14 /* MentalHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MentalHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthUITests.swift; sourceTree = "<group>"; };
 		9F07CB512BBF3CC100143C14 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9F393C3B2BCC75D3002F0FEB /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		9F393C3D2BCC7A30002F0FEB /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		9F393C3F2BCC8689002F0FEB /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		9F7439DD2BC5B810002E639D /* QuestionnairesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnairesView.swift; sourceTree = "<group>"; };
 		9F7439DF2BC5BB55002E639D /* QuestionnairesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnairesListView.swift; sourceTree = "<group>"; };
 		9F7439E12BC5C0F3002E639D /* QuestionnairesEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnairesEmptyView.swift; sourceTree = "<group>"; };
-		9F7B45BF2BC5F29100E1CC2D /* QuestionnairesAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnairesAddView.swift; sourceTree = "<group>"; };
+		9F7B45BF2BC5F29100E1CC2D /* QuestionnaireAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireAddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +150,8 @@
 				9F7439DD2BC5B810002E639D /* QuestionnairesView.swift */,
 				9F7439DF2BC5BB55002E639D /* QuestionnairesListView.swift */,
 				9F7439E12BC5C0F3002E639D /* QuestionnairesEmptyView.swift */,
-				9F7B45BF2BC5F29100E1CC2D /* QuestionnairesAddView.swift */,
+				9F7B45BF2BC5F29100E1CC2D /* QuestionnaireAddView.swift */,
+				9F393C3F2BCC8689002F0FEB /* QuestionView.swift */,
 			);
 			path = Questionnaires;
 			sourceTree = "<group>";
@@ -155,6 +162,8 @@
 				9F07CB242BBF3A4500143C14 /* MentalHealthApp.swift */,
 				9F07CB262BBF3A4500143C14 /* ContentView.swift */,
 				9F07CB282BBF3A4500143C14 /* Questionnaire.swift */,
+				9F393C3B2BCC75D3002F0FEB /* Questions.swift */,
+				9F393C3D2BCC7A30002F0FEB /* Answer.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -289,11 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F393C402BCC8689002F0FEB /* QuestionView.swift in Sources */,
 				9F7439DE2BC5B810002E639D /* QuestionnairesView.swift in Sources */,
-				9F7B45C02BC5F29100E1CC2D /* QuestionnairesAddView.swift in Sources */,
+				9F7B45C02BC5F29100E1CC2D /* QuestionnaireAddView.swift in Sources */,
 				9F7439E02BC5BB55002E639D /* QuestionnairesListView.swift in Sources */,
+				9F393C3E2BCC7A30002F0FEB /* Answer.swift in Sources */,
 				9F7439E22BC5C0F3002E639D /* QuestionnairesEmptyView.swift in Sources */,
 				9F07CB272BBF3A4500143C14 /* ContentView.swift in Sources */,
+				9F393C3C2BCC75D3002F0FEB /* Questions.swift in Sources */,
 				9F07CB292BBF3A4500143C14 /* Questionnaire.swift in Sources */,
 				9F07CB252BBF3A4500143C14 /* MentalHealthApp.swift in Sources */,
 			);

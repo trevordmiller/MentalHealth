@@ -17,9 +17,9 @@ struct QuestionnairesListView: View {
                 List {
                     ForEach(questionnaires) { questionnaire in
                         NavigationLink {
-                            Text("Questionnaire at \(questionnaire.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                            Text("Questionnaire at \(questionnaire.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))")
                         } label: {
-                            Text(questionnaire.timestamp, format: Date.FormatStyle(date: .long, time: .shortened))
+                            Text(questionnaire.creationDate, format: Date.FormatStyle(date: .long, time: .shortened))
                         }
                     }
                     .onDelete(perform: confirmDelete)
@@ -42,7 +42,7 @@ struct QuestionnairesListView: View {
         }
         .navigationTitle("Questionnaires")
         .sheet(isPresented: $isAdding) {
-            QuestionnairesAddView()
+            QuestionnaireAddView()
         }
         .confirmationDialog("Delete", isPresented: $isConfirmingDelete) {
             Button(role: .destructive, action: delete) {
