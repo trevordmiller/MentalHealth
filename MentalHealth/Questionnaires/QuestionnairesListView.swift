@@ -16,11 +16,7 @@ struct QuestionnairesListView: View {
             } else {
                 List {
                     ForEach(questionnaires) { questionnaire in
-                        NavigationLink {
-                            Text("Questionnaire at \(questionnaire.creationDate, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                        } label: {
-                            Text(questionnaire.creationDate, format: Date.FormatStyle(date: .long, time: .shortened))
-                        }
+                        QuestionnaireRowView(questionnaire: questionnaire)
                     }
                     .onDelete(perform: confirmDelete)
                 }
