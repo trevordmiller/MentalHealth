@@ -1,5 +1,5 @@
 struct Score {
-    let questionnaire: Questionnaire
+    private let questionnaire: Questionnaire
     
     var total = 0
     var severity = Severity.minimal
