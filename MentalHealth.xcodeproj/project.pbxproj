@@ -15,6 +15,8 @@
 		9F07CB392BBF3A4600143C14 /* MentalHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07CB382BBF3A4600143C14 /* MentalHealthTests.swift */; };
 		9F07CB432BBF3A4600143C14 /* MentalHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */; };
 		9F25DB402BCED03B003118DF /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25DB3F2BCED03B003118DF /* AboutView.swift */; };
+		9F25DB432BCED5F6003118DF /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25DB422BCED5F6003118DF /* HistoryView.swift */; };
+		9F25DB452BCED92E003118DF /* HistoryEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25DB442BCED92E003118DF /* HistoryEmptyView.swift */; };
 		9F372CAB2BCDC25E009308C6 /* QuestionnaireRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372CAA2BCDC25E009308C6 /* QuestionnaireRowView.swift */; };
 		9F372CB12BCDCD20009308C6 /* QuestionnaireDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372CB02BCDCD20009308C6 /* QuestionnaireDetailsView.swift */; };
 		9F372CB72BCDE0A5009308C6 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F372CB62BCDE0A5009308C6 /* Score.swift */; };
@@ -59,6 +61,8 @@
 		9F07CB422BBF3A4600143C14 /* MentalHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentalHealthUITests.swift; sourceTree = "<group>"; };
 		9F07CB512BBF3CC100143C14 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9F25DB3F2BCED03B003118DF /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		9F25DB422BCED5F6003118DF /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		9F25DB442BCED92E003118DF /* HistoryEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEmptyView.swift; sourceTree = "<group>"; };
 		9F372CAA2BCDC25E009308C6 /* QuestionnaireRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireRowView.swift; sourceTree = "<group>"; };
 		9F372CB02BCDCD20009308C6 /* QuestionnaireDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnaireDetailsView.swift; sourceTree = "<group>"; };
 		9F372CB62BCDE0A5009308C6 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			children = (
 				9FD67A6E2BC9DD1E00AC8C6D /* Main */,
 				9F7439DC2BC5B7CD002E639D /* Questionnaires */,
+				9F25DB412BCED5D2003118DF /* History */,
 				9F25DB3E2BCED003003118DF /* About */,
 				9F07CB2A2BBF3A4600143C14 /* Assets.xcassets */,
 				9F07CB2C2BBF3A4600143C14 /* MentalHealth.entitlements */,
@@ -161,6 +166,15 @@
 				9F25DB3F2BCED03B003118DF /* AboutView.swift */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		9F25DB412BCED5D2003118DF /* History */ = {
+			isa = PBXGroup;
+			children = (
+				9F25DB422BCED5F6003118DF /* HistoryView.swift */,
+				9F25DB442BCED92E003118DF /* HistoryEmptyView.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		9F7439DC2BC5B7CD002E639D /* Questionnaires */ = {
@@ -330,9 +344,11 @@
 				9F7439E02BC5BB55002E639D /* QuestionnairesListView.swift in Sources */,
 				9F393C3E2BCC7A30002F0FEB /* Answer.swift in Sources */,
 				9F7439E22BC5C0F3002E639D /* QuestionnairesEmptyView.swift in Sources */,
+				9F25DB432BCED5F6003118DF /* HistoryView.swift in Sources */,
 				9F372CB92BCDE48D009308C6 /* Severity.swift in Sources */,
 				9F372CB72BCDE0A5009308C6 /* Score.swift in Sources */,
 				9F07CB272BBF3A4500143C14 /* ContentView.swift in Sources */,
+				9F25DB452BCED92E003118DF /* HistoryEmptyView.swift in Sources */,
 				9F393C3C2BCC75D3002F0FEB /* Questions.swift in Sources */,
 				9F07CB292BBF3A4500143C14 /* Questionnaire.swift in Sources */,
 				9F07CB252BBF3A4500143C14 /* MentalHealthApp.swift in Sources */,

@@ -9,6 +9,11 @@ struct ContentView: View {
                     Label("Questionnaires", systemImage: "list.bullet.clipboard")
                 }
             
+            HistoryView()
+                .tabItem {
+                    Label("History", systemImage: "chart.xyaxis.line")
+                }
+            
             AboutView()
                 .tabItem {
                     Label("About", systemImage: "info.circle")
