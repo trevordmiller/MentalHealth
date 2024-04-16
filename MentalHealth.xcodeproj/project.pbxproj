@@ -24,6 +24,7 @@
 		9F393C3C2BCC75D3002F0FEB /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393C3B2BCC75D3002F0FEB /* Questions.swift */; };
 		9F393C3E2BCC7A30002F0FEB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393C3D2BCC7A30002F0FEB /* Answer.swift */; };
 		9F393C402BCC8689002F0FEB /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F393C3F2BCC8689002F0FEB /* QuestionView.swift */; };
+		9F694BD12BCF324D00AABAD2 /* HistoryChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F694BD02BCF324D00AABAD2 /* HistoryChartView.swift */; };
 		9F7439DE2BC5B810002E639D /* QuestionnairesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7439DD2BC5B810002E639D /* QuestionnairesView.swift */; };
 		9F7439E02BC5BB55002E639D /* QuestionnairesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7439DF2BC5BB55002E639D /* QuestionnairesListView.swift */; };
 		9F7439E22BC5C0F3002E639D /* QuestionnairesEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7439E12BC5C0F3002E639D /* QuestionnairesEmptyView.swift */; };
@@ -70,6 +71,7 @@
 		9F393C3B2BCC75D3002F0FEB /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 		9F393C3D2BCC7A30002F0FEB /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		9F393C3F2BCC8689002F0FEB /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		9F694BD02BCF324D00AABAD2 /* HistoryChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryChartView.swift; sourceTree = "<group>"; };
 		9F7439DD2BC5B810002E639D /* QuestionnairesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnairesView.swift; sourceTree = "<group>"; };
 		9F7439DF2BC5BB55002E639D /* QuestionnairesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnairesListView.swift; sourceTree = "<group>"; };
 		9F7439E12BC5C0F3002E639D /* QuestionnairesEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionnairesEmptyView.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				9F25DB422BCED5F6003118DF /* HistoryView.swift */,
 				9F25DB442BCED92E003118DF /* HistoryEmptyView.swift */,
+				9F694BD02BCF324D00AABAD2 /* HistoryChartView.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				9F372CB12BCDCD20009308C6 /* QuestionnaireDetailsView.swift in Sources */,
 				9F7439DE2BC5B810002E639D /* QuestionnairesView.swift in Sources */,
 				9F372CAB2BCDC25E009308C6 /* QuestionnaireRowView.swift in Sources */,
+				9F694BD12BCF324D00AABAD2 /* HistoryChartView.swift in Sources */,
 				9F25DB402BCED03B003118DF /* AboutView.swift in Sources */,
 				9F7B45C02BC5F29100E1CC2D /* QuestionnaireAddView.swift in Sources */,
 				9F7439E02BC5BB55002E639D /* QuestionnairesListView.swift in Sources */,
