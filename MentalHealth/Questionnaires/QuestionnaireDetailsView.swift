@@ -61,19 +61,21 @@ struct QuestionnaireDetailsView: View {
 
 #Preview {
     NavigationStack {
-        QuestionnaireDetailsView(questionnaire: Questionnaire(
+        let questionnaire = Questionnaire(
             questions: Questions(
                 interest: .sometimes,
-                hope: .sometimes,
-                sleep: .sometimes,
-                energy: .sometimes,
+                hope: .often,
+                sleep: .often,
+                energy: .often,
                 appetite: .sometimes,
                 expectations: .sometimes,
                 concentration: .sometimes,
-                speed: .sometimes,
+                speed: .none,
                 harm: .sometimes
             )
-        ))
-        .modelContainer(for: Questionnaire.self, inMemory: true)
+        )
+        
+        QuestionnaireDetailsView(questionnaire: questionnaire)
+            .modelContainer(for: Questionnaire.self, inMemory: true)
     }
 }
