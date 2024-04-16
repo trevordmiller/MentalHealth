@@ -8,6 +8,11 @@ struct ContentView: View {
                 .tabItem {
                     Label("Questionnaires", systemImage: "list.bullet.clipboard")
                 }
+            
+            AboutView()
+                .tabItem {
+                    Label("About", systemImage: "info.circle")
+                }
         }
     }
 }
