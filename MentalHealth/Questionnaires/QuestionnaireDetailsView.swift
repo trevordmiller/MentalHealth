@@ -3,11 +3,12 @@ import SwiftData
 
 struct QuestionnaireDetailsView: View {
     let questionnaire: Questionnaire
-    let score: Score
     
     var body: some View {
         Group {
             VStack {
+                let score = Score(questionnaire: questionnaire)
+                
                 GroupBox("Total") {
                     Text("\(score.total)")
                 }
@@ -59,27 +60,20 @@ struct QuestionnaireDetailsView: View {
 }
 
 #Preview {
-    let questionnaire = Questionnaire(
-        questions: Questions(
-            interest: .sometimes,
-            hope: .sometimes,
-            sleep: .sometimes,
-            energy: .sometimes,
-            appetite: .sometimes,
-            expectations: .sometimes,
-            concentration: .sometimes,
-            speed: .sometimes,
-            harm: .sometimes
-        )
-    )
-    
-    let score = Score(questionnaire: questionnaire)
-    
-    return NavigationStack {
-        QuestionnaireDetailsView(
-            questionnaire: questionnaire,
-            score: score
-        )
+    NavigationStack {
+        QuestionnaireDetailsView(questionnaire: Questionnaire(
+            questions: Questions(
+                interest: .sometimes,
+                hope: .sometimes,
+                sleep: .sometimes,
+                energy: .sometimes,
+                appetite: .sometimes,
+                expectations: .sometimes,
+                concentration: .sometimes,
+                speed: .sometimes,
+                harm: .sometimes
+            )
+        ))
         .modelContainer(for: Questionnaire.self, inMemory: true)
     }
 }

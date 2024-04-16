@@ -3,25 +3,12 @@ import SwiftData
 
 struct QuestionnaireRowView: View {
     let questionnaire: Questionnaire
-    let score: Score
-    
-    init(questionnaire: Questionnaire) {
-        self.questionnaire = questionnaire
-        score = Score(questionnaire: questionnaire)
-    }
     
     var body: some View {
         NavigationLink {
-            QuestionnaireDetailsView(
-                questionnaire: questionnaire,
-                score: score
-            )
+            QuestionnaireDetailsView(questionnaire: questionnaire)
         } label: {
             HStack {
-                Text("\(score.total)")
-                
-                Text("\(score.severity)")
-                
                 Text(questionnaire.creationDate, format: Date.FormatStyle(date: .long, time: .shortened))
             }
         }

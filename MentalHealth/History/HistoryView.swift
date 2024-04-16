@@ -1,6 +1,5 @@
 import SwiftUI
 import SwiftData
-import Charts
 
 struct HistoryView: View {
     @Environment(\.modelContext) private var modelContext
@@ -12,15 +11,7 @@ struct HistoryView: View {
                 if questionnaires.isEmpty {
                     HistoryEmptyView()
                 } else {
-                    Chart {
-                        ForEach(questionnaires) { questionnaire in
-                            LineMark(
-                                x: .value("Date", questionnaire.creationDate),
-                                y: .value("Total", Score(questionnaire: questionnaire).total)
-                            )
-                        }
-                    }
-                    .padding()
+                    HistoryChartView(questionnaires: questionnaires)
                 }
             }
             .navigationTitle("History")
