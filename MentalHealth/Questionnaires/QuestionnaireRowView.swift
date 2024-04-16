@@ -18,20 +18,22 @@ struct QuestionnaireRowView: View {
 #Preview {
     NavigationStack {
         List {
-            QuestionnaireRowView(questionnaire: Questionnaire(
+            let questionnaire = Questionnaire(
                 questions: Questions(
                     interest: .sometimes,
-                    hope: .sometimes,
-                    sleep: .sometimes,
-                    energy: .sometimes,
+                    hope: .often,
+                    sleep: .often,
+                    energy: .often,
                     appetite: .sometimes,
                     expectations: .sometimes,
                     concentration: .sometimes,
-                    speed: .sometimes,
+                    speed: .none,
                     harm: .sometimes
                 )
-            ))
-            .modelContainer(for: Questionnaire.self, inMemory: true)
+            )
+            
+            QuestionnaireRowView(questionnaire: questionnaire)
+                .modelContainer(for: Questionnaire.self, inMemory: true)
         }
     }
 }

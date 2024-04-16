@@ -21,20 +21,50 @@ struct HistoryChartView: View {
 }
 
 #Preview {
-    HistoryChartView(questionnaires: [
-        Questionnaire(
-            questions: Questions(
-                interest: .sometimes,
-                hope: .sometimes,
-                sleep: .sometimes,
-                energy: .sometimes,
-                appetite: .sometimes,
-                expectations: .sometimes,
-                concentration: .sometimes,
-                speed: .sometimes,
-                harm: .sometimes
+    Group {
+        let questionnaires = [
+            Questionnaire(
+                questions: Questions(
+                    interest: .sometimes,
+                    hope: .sometimes,
+                    sleep: .none,
+                    energy: .none,
+                    appetite: .sometimes,
+                    expectations: .sometimes,
+                    concentration: .none,
+                    speed: .none,
+                    harm: .none
+                )
+            ),
+            Questionnaire(
+                questions: Questions(
+                    interest: .sometimes,
+                    hope: .sometimes,
+                    sleep: .often,
+                    energy: .often,
+                    appetite: .sometimes,
+                    expectations: .sometimes,
+                    concentration: .sometimes,
+                    speed: .none,
+                    harm: .none
+                )
+            ),
+            Questionnaire(
+                questions: Questions(
+                    interest: .sometimes,
+                    hope: .sometimes,
+                    sleep: .sometimes,
+                    energy: .sometimes,
+                    appetite: .sometimes,
+                    expectations: .sometimes,
+                    concentration: .sometimes,
+                    speed: .none,
+                    harm: .none
+                )
             )
-        )
-    ])
-    .modelContainer(for: Questionnaire.self, inMemory: true)
+        ]
+        
+        HistoryChartView(questionnaires: questionnaires)
+            .modelContainer(for: Questionnaire.self, inMemory: true)
+    }
 }
