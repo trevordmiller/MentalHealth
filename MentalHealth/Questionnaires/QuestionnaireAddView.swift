@@ -5,6 +5,8 @@ struct QuestionnaireAddView: View {
     @Environment(\.modelContext) private var modelContext
     @Environment(\.dismiss) private var dismiss
     
+    @State private var isConfirmingCancel = false
+    
     @State private var interest: Answer?
     @State private var hope: Answer?
     @State private var sleep: Answer?
@@ -68,7 +70,7 @@ struct QuestionnaireAddView: View {
             }
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel", action: cancel)
+                    Button("Cancel", action: confirmCancel)
                 }
                 
                 ToolbarItem(placement: .primaryAction) {
@@ -77,7 +79,42 @@ struct QuestionnaireAddView: View {
                 }
             }
             .navigationTitle("Questionnaire")
+            .interactiveDismissDisabled(hasUnsavedChanges)
+            .confirmationDialog(
+                "There are unsaved changes that will be lost",
+                isPresented: $isConfirmingCancel,
+                titleVisibility: .visible
+            ) {
+                Button("Delete", role: .destructive, action: cancel)
+                Button("Continue", role: .cancel, action: stopCancel)
+            }
         }
+    }
+    
+    private var answers: [Answer?] {
+        [
+            interest,
+            hope,
+            sleep,
+            energy,
+            appetite,
+            expectations,
+            concentration,
+            speed,
+            harm
+        ]
+    }
+    
+    private func confirmCancel() {
+        if hasUnsavedChanges {
+            isConfirmingCancel = true
+        } else {
+            cancel()
+        }
+    }
+    
+    private func stopCancel() {
+        isConfirmingCancel = false
     }
     
     private func cancel() {
@@ -128,6 +165,10 @@ struct QuestionnaireAddView: View {
         else { return false }
         
         return true
+    }
+    
+    private var hasUnsavedChanges: Bool {
+        answers.contains(where: { $0 != nil })
     }
 }
 
