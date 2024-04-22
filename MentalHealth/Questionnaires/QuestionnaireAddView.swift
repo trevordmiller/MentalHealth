@@ -75,7 +75,7 @@ struct QuestionnaireAddView: View {
                 
                 ToolbarItem(placement: .primaryAction) {
                     Button("Save", action: save)
-                        .disabled(!isComplete())
+                        .disabled(!isComplete)
                 }
             }
             .navigationTitle("Questionnaire")
@@ -103,6 +103,14 @@ struct QuestionnaireAddView: View {
             speed,
             harm
         ]
+    }
+    
+    private var hasUnsavedChanges: Bool {
+        answers.contains(where: { $0 != nil })
+    }
+    
+    private var isComplete: Bool {
+        answers.allSatisfy { $0 != nil }
     }
     
     private func confirmCancel() {
@@ -150,25 +158,6 @@ struct QuestionnaireAddView: View {
         modelContext.insert(questionnaire)
         
         dismiss()
-    }
-    
-    private func isComplete() -> Bool {
-        guard interest != nil,
-              hope != nil,
-              sleep != nil,
-              energy != nil,
-              appetite != nil,
-              expectations != nil,
-              concentration != nil,
-              speed != nil,
-              harm != nil
-        else { return false }
-        
-        return true
-    }
-    
-    private var hasUnsavedChanges: Bool {
-        answers.contains(where: { $0 != nil })
     }
 }
 
